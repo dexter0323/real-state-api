@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "bcbb7322-f33d-4225-b7c2-e69980c743d7",
+		"name": "real-state-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12652875"
+	},
+	"item": [
+		{
+			"name": "Listings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/listings",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listing",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"live screen demo\",\n    \"price\": 500,\n    \"description\": \"hello world!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/listings",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listing",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"live screen demo\",\n    \"price\": 500,\n    \"description\": \"hello world!\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/listings/b2ac0bc2-d7a7-4893-bb28-e0fb364ca998",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"listings",
+						"b2ac0bc2-d7a7-4893-bb28-e0fb364ca998"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

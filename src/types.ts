@@ -1,6 +1,6 @@
 export type Listing = {
-  id: string;
-  title: string;
-  price: string;
-  description: string;
-};
+  id: string
+  title: string
+  price: number
+  description: string
+}
